@@ -43,6 +43,7 @@ img {
 	width: 100%;
 }
 
+/* Header */
 .showcase {
 	width: 100%;
 	height: 110vh;
@@ -54,17 +55,6 @@ img {
 	box-shadow: inset 0.25px 110px 300px #000, inset -0.25px -110px 300px #000;
 	
 }
-
-/* .showcase::after {
-	/* content: ''; */
-	/* position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	
-} */ 
 
 .showcase-top {
 	position: relative;
@@ -139,19 +129,12 @@ img {
 	font-weight: 500;
 }
 
-
-
-
-
-/* Input tags */
 form{
 	position: relative;
 	display: inline-block;
 	box-sizing: border-box;
 	vertical-align: center;
-
-	overflow: hidden;
-	
+	overflow: hidden;	
 	height: 80px;
 }
 
@@ -166,8 +149,6 @@ form{
 	padding: 0 25px;
 	font-size: 16px;
 } 
-
-
 
 .submit {
 	margin-bottom: -10px;
@@ -193,8 +174,7 @@ form{
 .card-2,
 .card-3 {
 	border-top: 8px #222 solid;
-	padding: 70px 45px;
-	
+	padding: 70px 45px;	
 }
 
 /* Card-1 */
@@ -206,8 +186,7 @@ form{
 	text-align: left;
 	align-items: center;
 	margin: 0px 164.2px;
-	max-width: 100%;
-	
+	max-width: 100%;	
 }
 
 .description-1 {
@@ -243,7 +222,6 @@ form{
 }
 
 /* Card-2 */
-
 .card-2-content {
 	position: relative;
 	display: inline-grid;
@@ -257,7 +235,6 @@ form{
 
 .description-2 {
 	padding: 0 0 0 100px;
-
 }
 
 .description-2 h1 {
@@ -271,11 +248,9 @@ form{
 	margin: 19.5px 0 6.5px;
 	font-size: 1.625rem;
     font-weight: 400;
-
 }
 
 /* Card-3 */
-
 .card-3-content {
 	position: relative;
 	display: inline-grid;
@@ -302,7 +277,6 @@ form{
 	margin: 19.5px 0 6.5px;
 	font-size: 1.625rem;
     font-weight: 400;
-
 }
 
 .card-3-video {
@@ -323,7 +297,6 @@ form{
 }
 
 /* FAQ  */
-
 .faq {
 	border-top: 8px #222 solid;
 	border-bottom: 8px #222 solid;
@@ -388,8 +361,7 @@ form{
     font-size: 1.2rem;
 }
 
-
-
+/* Footer */
 .footer {
 	max-width: 70%;
 	margin: 1rem auto;
@@ -426,37 +398,6 @@ form{
 	border-radius: 5px;
 }
 
-/* Container */
-.container {
-	max-width: 70%;
-	margin: auto;
-	overflow: hidden;
-	padding: 0 2rem;
-}
-
-/* Text Styles */
-.text-xl {
-	font-size: 2rem;
-}
-
-.text-lg {
-	font-size: 1.8rem;
-	margin-bottom: 1rem;
-}
-
-.text-md {
-	margin-bottom: 1.5rem;
-	font-size: 1.2rem;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.text-dark {
-	color: #999;
-}
-
 /* Buttons */
 .btn {
 	display: inline-block;
@@ -474,122 +415,13 @@ form{
 	border-radius: 2px;
 }
 
-.btn:hover {
-	opacity: 0.9;
-}
-
 .btn-rounded {
 	border-radius: 3px;
 }
 
-.btn-xl {
-	font-size: 2rem;
-	padding: 1.5rem 2.1rem;
-	text-transform: uppercase;
+.btn:hover {
+	opacity: 0.9;
 }
 
-.btn-lg {
-	font-size: 1rem;
-	padding: 0.8rem 1.3rem;
-	text-transform: uppercase;
-}
 
-.btn-icon {
-	margin-left: 1rem;
-}
 
-@media (max-width: 960px) {
-
-		.showcase {
-		height: 70vh;
-	}
-
-	.hide-sm {
-		display: none;
-	}
-
-	.showcase-top img {
-		top: 30%;
-		left: 5%;
-		transform: translate(0);
-	}
-
-	.showcase-content h1 {
-		font-size: 3.7rem;
-		line-height: 1;
-	}
-
-	.showcase-content p {
-		font-size: 1.5rem;
-	}
-
-	.footer .footer-cols {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.btn-xl {
-		font-size: 1.5rem;
-		padding: 1.4rem 2rem;
-		text-transform: uppercase;
-	}
-
-	.text-xl {
-		font-size: 1.5rem;
-	}
-
-	.text-lg {
-		font-size: 1.3rem;
-		margin-bottom: 1rem;
-	}
-
-	.text-md {
-		margin-bottom: 1rem;
-		font-size: 1.2rem;
-	}
-}
-
-@media (max-width: 700px) {
-	.showcase::after {
-		background: rgba(0, 0, 0, 0.6);
-		box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000;
-	}
-
-	.showcase-content h1 {
-		font-size: 2.5rem;
-		line-height: 1;
-	}
-
-	.showcase-content p {
-		font-size: 1rem;
-	}
-
-	#tab-1-content .tab-1-content-inner {
-		grid-template-columns: 1fr;
-		text-align: center;
-	}
-
-	#tab-2-content .tab-2-content-top {
-		display: block;
-		text-align: center;
-	}
-
-	#tab-2-content .tab-2-content-bottom {
-		margin-top: 2rem;
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 2rem;
-		text-align: center;
-	}
-
-	.btn-xl {
-		font-size: 1rem;
-		padding: 1.2rem 1.6rem;
-		text-transform: uppercase;
-	}
-}
-
-@media(max-height: 600px) {
-  .showcase-content {
-	margin-top: 3rem;
-}
-}

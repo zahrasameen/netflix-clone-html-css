@@ -9,15 +9,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
+    <!-- jQuery -->
     <script>
-        $(function () {
+        $(function () {            
+            //hides answers on page load
             $('.ans1').hide();
             $('.ans2').hide();
             $('.ans3').hide();
             $('.ans4').hide();
             $('.ans5').hide();
 
-
+            //shows answers on click
             $('#ques1').click(function () {
                 $('.ans1').toggle();
             });
@@ -39,6 +41,7 @@
 
 <body>
 
+    <!-- Header Section -->
     <header class="showcase">
         <div class="showcase-top">
             <img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />
@@ -53,14 +56,13 @@
                 <input class="email" type="email" name="" id="email" placeholder="Email address">
                 <input class="submit" type="submit" value="TRY FOR 50% OFF">
             </form>
-
             <p class="disclaimer">Only new members are eligible for this offer.</p>
-
         </div>
-
     </header>
 
+    <!-- Cards Section -->
     <section class="style-cards">
+
         <div class="card-1">
             <div class="card-1-content">
                 <div class="description-1">
@@ -71,7 +73,6 @@
                 <video src="videos/video-tv-0819.m4v" class="card-1-video" autoplay="" playsinline="" muted=""
                     loop=""></video>
             </div>
-
         </div>
 
         <div class="card-2">
@@ -84,7 +85,6 @@
                     </h3>
                 </div>
             </div>
-
         </div>
 
         <div class="card-3">
@@ -98,13 +98,10 @@
                 <video src="videos/video-devices.m4v" class="card-3-video" autoplay="" playsinline="" muted=""
                     loop=""></video>
             </div>
-
         </div>
-
-
-
     </section>
 
+    <!-- FAQ Section -->
     <section class="faq">
         <div class="faq-content">
             <h1>Frequently Asked Questions</h1>
@@ -196,13 +193,7 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
+    <!-- Footer -->
     <footer class="footer">
         <p>Questions? Call 1-866-579-7172</p>
         <div class="footer-cols">
@@ -232,10 +223,7 @@
                 <li><a href="#">Legal Notices</a></li>
             </ul>
         </div>
-
     </footer>
 
-
 </body>
-
 </html>
