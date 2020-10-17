@@ -329,12 +329,12 @@ form{
 	border-bottom: 8px #222 solid;
 	padding: 70px 45px;
 	text-align: center;
-
 }
 
 .faq-content h1 {
 	padding-bottom: 40px;
 	font-size: 3rem;
+	
 }
 
 .questions {
@@ -350,29 +350,29 @@ form{
     margin: 0 0 8px 0;
 }
 
-.questions .btn-q{
+.questions .ques-list{
 	
-	width: 700px;
+	width: 800px;
 	font-size: 1.6rem;
 	background-color: #222;
 	color: white;
 	text-align: left;
-	padding: .8em 2.2em .8em 1.2em;
-    margin-bottom: 1px;
+	padding: .8em 1.2em .8em 1.2em;
+	margin-bottom: 1px;
+	margin-top: 1px;
     font-weight: 400;
-    position: relative;
-   
+	position: relative;
+	outline: none;
     border: 0;
 }
 
-.email-form .title {
-	
-	
-	max-width: 800px;
-	font-size: 1.2rem;
-	font-weight: 500;
-	text-align: center;
+.title {
+	max-width: none;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
 }
+
+
 
 .footer {
 	max-width: 70%;

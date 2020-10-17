@@ -5,12 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Pakistan - Watch TV Shows Online, Watch Movies Online</title>
-    <script src="https://kit.fontawesome.com/835ea78ba2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $('.ans1').hide();
+            $('.ans2').hide();
+            $('.ans3').hide();
+            $('.ans4').hide();
+            $('.ans5').hide();
+
+
+            $('#ques1').click(function () {
+                $('.ans1').toggle();
+            });
+            $('#ques2').click(function () {
+                $('.ans2').toggle();
+            });
+            $('#ques3').click(function () {
+                $('.ans3').toggle();
+            });
+            $('#ques4').click(function () {
+                $('.ans4').toggle();
+            });
+            $('#ques5').click(function () {
+                $('.ans5').toggle();
+            });
+        });
+    </script>
 </head>
 
 <body>
-
 
     <header class="showcase">
         <div class="showcase-top">
@@ -41,9 +68,10 @@
                     <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
                 </div>
                 <img class="card-1-img" src="img/section-1.png" alt="">
-                <video src="videos/video-tv-0819.m4v" class="card-1-video" autoplay="" playsinline="" muted="" loop=""></video>
+                <video src="videos/video-tv-0819.m4v" class="card-1-video" autoplay="" playsinline="" muted=""
+                    loop=""></video>
             </div>
-            
+
         </div>
 
         <div class="card-2">
@@ -56,19 +84,21 @@
                     </h3>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="card-3">
             <div class="card-3-content">
                 <div class="description-3">
                     <h1>Watch everywhere.</h1>
-                    <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h3>
+                    <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.
+                    </h3>
                 </div>
                 <img class="card-3-img" src="img/section-3.png" alt="">
-                <video src="videos/video-devices.m4v" class="card-3-video" autoplay="" playsinline="" muted="" loop=""></video>
+                <video src="videos/video-devices.m4v" class="card-3-video" autoplay="" playsinline="" muted=""
+                    loop=""></video>
             </div>
-            
+
         </div>
 
 
@@ -78,40 +108,92 @@
     <section class="faq">
         <div class="faq-content">
             <h1>Frequently Asked Questions</h1>
-            <ul class="questions">
-                <li>
-                    <button class="btn-q">What is Netflix?</button>
-                </li>
-           
-                <li>
-                    <button class="btn-q">How much does Netflix cost?</button>
-                </li>
-           
-                <li>
-                    <button class="btn-q">Where can I watch?</button>
-                </li>
-            
-                <li>
-                    <button class="btn-q">How do I cancel?</button>
-                </li>
-          
-                <li>
-                    <button class="btn-q">What can I watch on Netflix?</button>
-                </li>
-            </ul>
+            <div>
+                <ul class="questions">
 
-            <div class="email-form">
-                <h3 class="title">Ready to watch? Enter your email to create or restart your membership.</h3>
+                    <li id="ques1">
+                        <button class="ques-list">
+                            What is Netflix?
+                        </button>
+                    </li>
+                    <div class="ques-list ans1">
+                        <p>
+                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                            anime, documentaries, and more on thousands of internet-connected devices.
+                        </p>
+                        <p>
+                            You can watch as much as you want, whenever you want without a single commercial – all for
+                            one low monthly price. There's always something new to discover and new TV shows and movies
+                            are added every week!
+                        </p>
+                    </div>
+
+                    <li id="ques2">
+                        <button class="ques-list">
+                            How much does Netflix cost?
+                        </button>
+                    </li>
+                    <div class="ques-list ans2">
+                        <p>
+                            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one
+                            fixed monthly fee. Plans range from Rs950 to Rs1,500 a month. No extra costs, no contracts.
+                        </p>
+                    </div>
+
+                    <li id="ques3">
+                        <button class="ques-list">
+                            Where can I watch?
+                        </button>
+                    </li>
+                    <div class="ques-list ans3">
+                        <p>
+                            Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix
+                            account to watch instantly on the web at netflix.com from your personal computer or on any
+                            internet-connected device that offers the Netflix app, including smart TVs, smartphones,
+                            tablets, streaming media players and game consoles.
+                        </p>
+                        <p>
+                            You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use
+                            downloads to watch while you're on the go and without an internet connection. Take Netflix
+                            with you anywhere.
+                        </p>
+                    </div>
+
+                    <li id="ques4">
+                        <button class="ques-list">
+                            How do I cancel?
+                        </button>
+                    </li>
+                    <div class="ques-list ans4">
+                        <p>
+                            Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel
+                            your account online in two clicks. There are no cancellation fees – start or stop your
+                            account anytime.
+                        </p>
+                    </div>
+
+                    <li id="ques5">
+                        <button class="ques-list">
+                            What can I watch on Netflix?
+                        </button>
+                    </li>
+                    <div class="ques-list ans5">
+                        <p>
+                            Netflix has an extensive library of feature films, documentaries, TV shows, anime,
+                            award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                        </p>
+                    </div>
+
+                </ul>
+
+                <p class="title">Ready to watch? Enter your email to create or restart your membership.</p>
                 <form class="form">
                     <input class="email" type="email" name="" id="email" placeholder="Email address">
                     <input class="submit" type="submit" value="get started">
                 </form>
+
             </div>
-
         </div>
-        
-
-
     </section>
 
 
@@ -153,198 +235,7 @@
 
     </footer>
 
-    <!-- <header> 
-        <nav>
-            <a class="logo" href="#">
-                <img src="img/logo.png" alt="NETFLIX">
-            </a>
-            <a class="signin" href="https://www.netflix.com/pk/login">Sign In</a>
-        </nav>
 
-        <section class="pitch">
-            <h1 class="pitch__title">Unlimited entertainment.
-                50% off your first 2 months.</h1>
-            <p class="pitch__subtitle">Watch anywhere. Cancel anytime.</p>
-            <p class="pitch__subtitle">Watch anywhere. Cancel anytime.</p>
-
-            <button class="btn">JOIN FREE FOR A MONTH</button>
-        </section>
-
-    </header>
-
-    <section class="tabs">
-        <div class="container">
-            <div id="tab-1" class="tab-item tab-border">
-                <i class="fas fa-door-open fa-3x"></i>
-                <p class="hide-sm">Cancel at any time</p>
-            </div>
-            <div id="tab-2" class="tab-item">
-                <i class="fas fa-tablet-alt fa-3x"></i>
-                <p class="hide-sm">Watch anywhere</p>
-            </div>
-            <div id="tab-3" class="tab-item">
-                <i class="fas fa-tags fa-3x"></i>
-                <p class="hide-sm">Pick your price</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="tab-content">
-        <div class="container">
-            
-            <div id="tab-1-content" class="tab-content-item show">
-                <div class="tab-1-content-inner">
-                    <div>
-                        <p class="text-lg">
-                            If you decide Netflix isn't for you - no problem. no commitment.
-                            cancel online anytime.
-                        </p>
-                        <a href="#" class="btn btn-lg">watch free for 30 days</a>
-                    </div>
-                    <img src="img/tab-content-1.png" alt="">
-                </div>
-            </div>
-
-            
-            <div id="tab-2-content" class="tab-content-item">
-                <div class="tab-2-content-top">
-                    <p class="text-lg">
-                        Watch TV shows and movies anytime, anywhere — personalized for
-                            you.
-                    </p>
-                    <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
-                </div>
-                <div class="tab-2-content-bottom">
-                    <div>
-                        <img src="img/tab-content-2-1.png" alt="">
-                        <p class="text-md">Watch on your TV</p>
-                        <p class="text-dark">
-                            Smart TVs, Playstation, Xbox, Chromecast, Apple TV, blu-ray
-                                players and more.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="img/tab-content-2-2.png" alt="">
-                        <p class="text-md">Watch instantly or download for later</p>
-                        <p class="text-dark">
-                            Available on phone and tablet, wherever you go.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="img/tab-content-2-3.png" alt="">
-                        <p class="text-md">Use any computer</p>
-                        <p class="text-dark">
-                            Watch right on netflix.com.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            
-            <div id="tab-3-content" class="tab-content-item">
-                <div class="text-center">
-                    <p class="text-lg">Choose one plan and watch everything on Netflix</p>
-                    <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
-                </div>
-
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Basic</th>
-                            <th>Standard</th>
-                            <th>Premium</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monthly price after free month ends on 6/9/19</td>
-                            <td>$8.99</td>
-                            <td>$12.99</td>
-                            <td>$15.99</td>
-                        </tr>
-                        <tr>
-                            <td>HD Available</td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Ultra HD Available</td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Screens you can watch on at the same time</td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>Watch on your laptop, TV, phone and tablet</td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Unlimited movies and TV shows</td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Cancel anytime</td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>First month free</td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>Questions? Call 1-866-579-7172</p>
-        <div class="footer-cols">
-            <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Investor Relations</a></li>
-                <li><a href="#">Ways To Watch</a></li>
-                <li><a href="#">Corporate Information</a></li>
-                <li><a href="#">Netflix Originals</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Terms Of Use</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Redeem Gift Cards</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Speed Test</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Media Center</a></li>
-                <li><a href="#">Buy Gift Cards</a></li>
-                <li><a href="#">Cookie Preferences</a></li>
-                <li><a href="#">Legal Notices</a></li>
-            </ul>
-        </div>
-
-    </footer> -->
-    <script src="main.js"></script>
 </body>
 
 </html>
