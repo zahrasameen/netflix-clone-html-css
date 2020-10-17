@@ -363,7 +363,23 @@ form{
     font-weight: 400;
 	position: relative;
 	outline: none;
-    border: 0;
+	border: 0;
+	cursor: pointer;
+}
+
+.ans-list {
+	width: 800px;
+	font-size: 1.6rem;
+	background-color: #222;
+	color: white;
+	text-align: left;
+	padding: .8em 1.2em .8em 1.2em;
+	margin-bottom: 1px;
+	margin-top: 1px;
+    font-weight: 400;
+	position: relative;
+	outline: none;
+	border: 0;
 }
 
 .title {
